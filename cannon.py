@@ -56,6 +56,9 @@ def move():
 
     for target in targets:
         target.x -= 0.5
+        if target.x < -200: #Se agrega instrucción que hace que cuando el objetivo salga de la ventana del juego, reaprarezca
+            target.x = 200
+            target.y = randrange(-150, 150)
 
     if inside(ball):
         speed.y -= 0.35
@@ -70,9 +73,7 @@ def move():
 
     draw()
 
-    for target in targets:
-        if not inside(target):
-            return
+    #Se elimina función que hace que se detenga el juego
 
     ontimer(move, 50)
 
