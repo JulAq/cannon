@@ -6,3 +6,4 @@ El jugador hace clic en pantalla para disparar una pelota roja con trayectoria p
 
 ## Modificaciones
 1. Se aumento la velocidad de disparo y de los objetivos.
+2. El juego nunca termina.
